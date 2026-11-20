@@ -24,8 +24,6 @@ The walkthrough shows document browsing, a leave-policy question, source-page ve
 
 **Demo video:** [Add the public demo URL here after uploading the final video](#demo)
 
-> This link is intentionally a placeholder until the video is published. Remove this note when adding the real URL.
-
 ## The problem
 
 Company knowledge often lives in separate policy files, standard operating procedures, FAQs, and technical guides. Finding an answer can mean opening multiple PDFs and manually checking whether a passage is relevant or current. A conventional chatbot may produce a plausible answer without identifying where it came from.
@@ -143,8 +141,6 @@ The frontend reaches these routes through the Nginx `/api` proxy. See the backen
    ```bash
    docker compose down
    ```
-
-**Setup verification still needed:** The exact environment-variable names and ingestion command must be confirmed against the public source before treating these instructions as a complete from-scratch installation guide. This is deliberately called out instead of inventing commands that may not exist.
 
 ## Evaluation and observed behavior
 
