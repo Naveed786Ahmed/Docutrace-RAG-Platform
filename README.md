@@ -174,5 +174,3 @@ These are **development-set observations**, not independently validated producti
 - Retrieval, multi-hop reasoning, and source attribution remain areas for further testing and improvement.
 
 ---
-
-**Project status:** Working portfolio implementation demonstrated locally. Developed independently from a public client-style problem statement.
