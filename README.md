@@ -20,9 +20,11 @@ This is an independently developed portfolio implementation inspired by a real U
 
 ## Demo
 
-The walkthrough shows document browsing, a leave-policy question, source-page verification, an unsupported-question fallback, and the system architecture.
+Watch the complete walkthrough of DocuTrace, including document exploration, live RAG responses, source verification, fallback behavior, and the system architecture.
 
-**Demo video:** [Add the public demo URL here after uploading the final video](#demo)
+[![DocuTrace | Project Walkthrough](https://img.youtube.com/vi/zwFoZFLQMjg/maxresdefault.jpg)](https://youtu.be/zwFoZFLQMjg)
+
+**[Watch the full project walkthrough on YouTube](https://youtu.be/zwFoZFLQMjg)**
 
 ## The problem
 
