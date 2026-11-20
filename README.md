@@ -173,4 +173,3 @@ These are **development-set observations**, not independently validated producti
 - The current demonstration does not establish multi-tenant authorization, document-level access controls, production monitoring, or enterprise security compliance.
 - Retrieval, multi-hop reasoning, and source attribution remain areas for further testing and improvement.
 
----
