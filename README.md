@@ -46,7 +46,7 @@ The fallback and citation features are safeguards, **not guarantees** that every
 
 ## Architecture
 
-![DocuTrace system architecture](docs/architecture.svg)
+![DocuTrace system architecture](architecture.svg)
 
 ### 1. Indexing pipeline
 
