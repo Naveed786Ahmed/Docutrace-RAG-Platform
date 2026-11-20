@@ -1,0 +1,29 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: docutrace-backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      CHROMA_DB_PATH: /app/chroma_db
+    volumes:
+      - ./chroma_db:/app/chroma_db
+      - ./sample_documents:/app/sample_documents:ro
+    expose:
+      - "8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: /api
+    container_name: docutrace-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "8080:80" 

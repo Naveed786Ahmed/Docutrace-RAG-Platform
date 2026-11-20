@@ -1,0 +1,25 @@
+# Python cache aur virtual environment
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Environment secrets (API keys yahan hoti hain, yeh GitHub par nahi jani chahiye!)
+.env
+.env.*
+!.env.example
+
+# Node.js (agar React frontend use karein)
+node_modules/
+dist/
+
+# Local vector database (ChromaDB ki local files heavy hoti hain, unhein ignore karna hai)
+chroma_db/
+chroma_data/
+
+# Local datasets aur generated files
+data/
+uploads/
+
+# IDE settings
+.vscode/

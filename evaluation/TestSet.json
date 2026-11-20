@@ -1,0 +1,1823 @@
+{
+  "dataset_name": "AcmeTech Enterprise Knowledge Assistant - RAG Evaluation Set",
+  "description": "Grounded question-answer pairs for evaluating retrieval and generation quality of a RAG system built over the AcmeTech Solutions Inc. internal knowledge base (26 PDF documents across HR, Engineering, Security, Product, Finance, Customer Support, and Legal).",
+  "num_documents": 26,
+  "num_questions": 200,
+  "question_type_breakdown": {
+    "single_hop": 180,
+    "multi_hop": 12,
+    "negative": 8
+  },
+  "category_breakdown": {
+    "Customer_Support": 23,
+    "Engineering": 34,
+    "Finance": 25,
+    "General": 8,
+    "HR": 37,
+    "Legal": 20,
+    "Product": 24,
+    "Security": 29
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "question": "How long is the probationary period for new hires at AcmeTech?",
+      "ground_truth_answer": "90 days, with a possible 30-day extension at manager discretion.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q002",
+      "question": "How many days of PTO do full-time employees accrue per year?",
+      "ground_truth_answer": "22 days per year, front-loaded annually after the first year of tenure.",
+      "source_document": "HR/Leave_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q003",
+      "question": "What is AcmeTech's 401(k) matching policy?",
+      "ground_truth_answer": "AcmeTech matches 100% of employee contributions up to 4% of base salary, with immediate vesting.",
+      "source_document": "HR/Benefits_Guide.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q004",
+      "question": "How many weeks of paid parental leave do non-birthing or adoptive parents receive?",
+      "ground_truth_answer": "10 weeks of fully paid leave.",
+      "source_document": "HR/Benefits_Guide.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q005",
+      "question": "How many minimum in-office days per week are required for hybrid employees, and which are the anchor days?",
+      "ground_truth_answer": "A minimum of 2 days per week, with Tuesday and Thursday as designated anchor days.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q006",
+      "question": "What are AcmeTech's core company values?",
+      "ground_truth_answer": "Customer Obsession, Ownership, Radical Candor, and Bias for Action.",
+      "source_document": "HR/Employee_Handbook.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q007",
+      "question": "How many sick days do employees get per year, separate from PTO?",
+      "ground_truth_answer": "10 paid sick days per year.",
+      "source_document": "HR/Leave_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q008",
+      "question": "What tenure milestone makes an employee eligible for a sabbatical, and how long is it?",
+      "ground_truth_answer": "5 years of continuous tenure makes an employee eligible for a 4-week paid sabbatical.",
+      "source_document": "HR/Leave_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q009",
+      "question": "In which city and year was AcmeTech founded, and what is its mission?",
+      "ground_truth_answer": "AcmeTech was founded in 2015 in San Francisco, California, with a mission to help mid-sized enterprises modernize operations through cloud-based workflow automation software.",
+      "source_document": "HR/Employee_Handbook.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q010",
+      "question": "Who are AcmeTech's CEO, CTO, and CFO?",
+      "ground_truth_answer": "CEO and Co-Founder Maria Chen, CTO David Okafor, and CFO Priya Ramaswamy.",
+      "source_document": "HR/Employee_Handbook.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q011",
+      "question": "What is the maximum value of a vendor gift an employee may accept without declining or reporting it?",
+      "ground_truth_answer": "$75 USD; gifts valued over $75 must be declined or reported to a manager.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q012",
+      "question": "What is AcmeTech's progressive discipline process for Code of Conduct violations?",
+      "ground_truth_answer": "Verbal warning, written warning, final written warning, and termination, though serious misconduct can skip steps.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q013",
+      "question": "How much resignation notice is required for individual contributors versus managers and above?",
+      "ground_truth_answer": "2 weeks for individual contributors and 4 weeks for managers and above.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q014",
+      "question": "Within how many business days must a departing employee return Company property?",
+      "ground_truth_answer": "Within 5 business days of their last working day.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q015",
+      "question": "What is the name of AcmeTech's structured onboarding program and how long does it last?",
+      "ground_truth_answer": "'Launchpad,' a structured 2-week onboarding program.",
+      "source_document": "HR/Employee_Handbook.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q016",
+      "question": "What is AcmeTech's monthly wellness stipend amount?",
+      "ground_truth_answer": "$75 USD per month (or local currency equivalent), which does not roll over month to month.",
+      "source_document": "HR/Benefits_Guide.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q017",
+      "question": "What is the vesting schedule for AcmeTech stock option grants?",
+      "ground_truth_answer": "4 years with a 1-year cliff: 25% after year one, then monthly thereafter.",
+      "source_document": "HR/Benefits_Guide.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q018",
+      "question": "What is AcmeTech's annual learning and development stipend?",
+      "ground_truth_answer": "$1,000 USD per year.",
+      "source_document": "HR/Benefits_Guide.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q019",
+      "question": "How many unused PTO days can be carried over into the next calendar year?",
+      "ground_truth_answer": "A maximum of 5 unused PTO days.",
+      "source_document": "HR/Leave_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q020",
+      "question": "How many paid bereavement days are provided for the death of an immediate family member?",
+      "ground_truth_answer": "Up to 10 paid days for an immediate family member (3 days for extended family).",
+      "source_document": "HR/Leave_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q021",
+      "question": "How far in advance must a planned PTO request be submitted through Workday?",
+      "ground_truth_answer": "At least 5 business days in advance.",
+      "source_document": "HR/Leave_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q022",
+      "question": "What percentage of the employee premium does AcmeTech cover for the Gold PPO health plan?",
+      "ground_truth_answer": "100% of the employee premium and 70% of dependent premiums.",
+      "source_document": "HR/Benefits_Guide.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q023",
+      "question": "What programming languages are primarily used for AcmeTech's backend services?",
+      "ground_truth_answer": "Go and Python primarily, with a small number of legacy services in Java.",
+      "source_document": "Engineering/Engineering_Handbook.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q024",
+      "question": "What is the on-call compensation stipend at AcmeTech?",
+      "ground_truth_answer": "A flat $200 USD stipend per week, paid via payroll.",
+      "source_document": "Engineering/Engineering_Handbook.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q025",
+      "question": "What is the minimum unit test coverage requirement for new backend code, and what is the higher bar for critical paths?",
+      "ground_truth_answer": "80% minimum coverage for new backend code, with 95% required for critical payment and authentication paths.",
+      "source_document": "Engineering/Coding_Standards.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q026",
+      "question": "What rate limit applies to Enterprise tier API accounts?",
+      "ground_truth_answer": "1,000 requests per minute per API key.",
+      "source_document": "Engineering/API_Documentation.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q027",
+      "question": "Describe AcmeTech's canary release process for production deployments.",
+      "ground_truth_answer": "Production deployments start with a 5% canary for 15 minutes, then automatically promote to 100% if error rates stay below 0.5%.",
+      "source_document": "Engineering/Deployment_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q028",
+      "question": "How many microservices make up the AcmeTech platform, and what AWS regions does production span?",
+      "ground_truth_answer": "Approximately 45 microservices, spanning us-east-1, eu-west-1, and ap-southeast-1.",
+      "source_document": "Engineering/Architecture_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q029",
+      "question": "Within how many days must feature flags be removed from the codebase after full rollout?",
+      "ground_truth_answer": "90 days after full rollout.",
+      "source_document": "Engineering/Deployment_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q030",
+      "question": "What SEV1 alert acknowledgment time is expected of on-call engineers?",
+      "ground_truth_answer": "5 minutes for Severity 1 (SEV1) alerts (20 minutes for SEV2).",
+      "source_document": "Engineering/Engineering_Handbook.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q031",
+      "question": "How many sub-teams make up AcmeTech Engineering, and what are they?",
+      "ground_truth_answer": "4 sub-teams: Platform, Integrations, Data & AI, and Security Engineering.",
+      "source_document": "Engineering/Engineering_Handbook.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q032",
+      "question": "What is the recommended maximum pull request size at AcmeTech, and why?",
+      "ground_truth_answer": "Under 400 lines where practical, to support faster review cycles.",
+      "source_document": "Engineering/Coding_Standards.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q033",
+      "question": "How many levels are in AcmeTech's engineering career ladder, and what is the top level called?",
+      "ground_truth_answer": "6 levels, from E1 (Associate Engineer) to E6 (Principal Engineer).",
+      "source_document": "Engineering/Engineering_Handbook.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q034",
+      "question": "What database-related architectural pattern does AcmeTech follow across its microservices?",
+      "ground_truth_answer": "A database-per-service pattern, with cross-service data access only through service APIs or Kafka events, never direct database access.",
+      "source_document": "Engineering/Architecture_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q035",
+      "question": "What is AcmeTech's target SLO for core API endpoint uptime?",
+      "ground_truth_answer": "99.9% uptime.",
+      "source_document": "Engineering/Architecture_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q036",
+      "question": "What is the base URL for AcmeTech's API v3?",
+      "ground_truth_answer": "https://api.acmetech.com/v3/",
+      "source_document": "Engineering/API_Documentation.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q037",
+      "question": "How long is an OAuth 2.0 access token valid for in the AcmeTech API?",
+      "ground_truth_answer": "60 minutes.",
+      "source_document": "Engineering/API_Documentation.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q038",
+      "question": "What algorithm is used to sign AcmeTech webhook payloads?",
+      "ground_truth_answer": "HMAC-SHA256, with the signature included in the X-AcmeTech-Signature header.",
+      "source_document": "Engineering/API_Documentation.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q039",
+      "question": "Which languages have officially supported AcmeTech SDKs?",
+      "ground_truth_answer": "Python, Node.js, and Java (Go and Ruby SDKs are community-maintained and not officially supported).",
+      "source_document": "Engineering/API_Documentation.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q040",
+      "question": "What Git branching strategy does AcmeTech use, and what is the target branch lifespan?",
+      "ground_truth_answer": "Trunk-based development with short-lived feature branches, targeting a lifespan under 3 days.",
+      "source_document": "Engineering/Coding_Standards.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q041",
+      "question": "Within how many days must Critical or High severity dependency vulnerabilities be patched?",
+      "ground_truth_answer": "Within 7 days of detection.",
+      "source_document": "Engineering/Coding_Standards.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q042",
+      "question": "What day and time does AcmeTech's standard weekly release train run?",
+      "ground_truth_answer": "Every Wednesday at 10:00 AM PT.",
+      "source_document": "Engineering/Deployment_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q043",
+      "question": "How is an automated rollback triggered at AcmeTech, and how long does it take?",
+      "ground_truth_answer": "Via the '/rollback' Slack command in #deployments, completing in approximately 3 minutes.",
+      "source_document": "Engineering/Deployment_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q044",
+      "question": "What additional approval is required for changes affecting billing, authentication, or data deletion?",
+      "ground_truth_answer": "A second approver from a designated 'high-risk change' reviewer group, in addition to standard code review.",
+      "source_document": "Engineering/Deployment_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q045",
+      "question": "What multi-factor authentication methods are permitted at AcmeTech, and which is explicitly not allowed?",
+      "ground_truth_answer": "An authenticator app or hardware security key are permitted; SMS-based MFA is not permitted.",
+      "source_document": "Security/Security_Policy.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q046",
+      "question": "Within how many hours of a confirmed data breach must AcmeTech notify affected customers?",
+      "ground_truth_answer": "Within 72 hours, per GDPR and contractual obligations.",
+      "source_document": "Security/Incident_Response.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q047",
+      "question": "What is AcmeTech's target Recovery Time Objective (RTO) and Recovery Point Objective (RPO) for Tier 1 systems?",
+      "ground_truth_answer": "RTO of 4 hours and RPO of 15 minutes for all Tier 1 (customer-facing) systems.",
+      "source_document": "Security/Disaster_Recovery.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q048",
+      "question": "How long does administrative production access last before automatically expiring under the PAM tool?",
+      "ground_truth_answer": "Sessions automatically expire after 4 hours.",
+      "source_document": "Security/Access_Control.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q049",
+      "question": "How often is a full disaster recovery failover test conducted?",
+      "ground_truth_answer": "Twice per year, in April and October.",
+      "source_document": "Security/Disaster_Recovery.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q050",
+      "question": "What are AcmeTech's four data classification tiers?",
+      "ground_truth_answer": "Public, Internal, Confidential, and Restricted.",
+      "source_document": "Security/Security_Policy.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q051",
+      "question": "Within how long must all system access be revoked after an employee's termination is processed?",
+      "ground_truth_answer": "Within 1 hour of the termination being processed in Workday.",
+      "source_document": "Security/Access_Control.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q052",
+      "question": "What is the minimum required password length at AcmeTech?",
+      "ground_truth_answer": "14 characters, with passwords managed via the Company-issued 1Password vault.",
+      "source_document": "Security/Security_Policy.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q053",
+      "question": "Within how long must a lost or stolen Company device be reported to IT Security?",
+      "ground_truth_answer": "Within 1 hour of discovery.",
+      "source_document": "Security/Security_Policy.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q054",
+      "question": "What compliance certifications does the Security Policy state AcmeTech holds?",
+      "ground_truth_answer": "SOC 2 Type II and ISO 27001.",
+      "source_document": "Security/Security_Policy.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q055",
+      "question": "How quickly must the Incident Response Team convene for a SEV1 incident?",
+      "ground_truth_answer": "Within 15 minutes of declaration.",
+      "source_document": "Security/Incident_Response.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q056",
+      "question": "Within how many business days must an incident postmortem be documented?",
+      "ground_truth_answer": "Within 5 business days.",
+      "source_document": "Security/Incident_Response.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q057",
+      "question": "What are the four incident severity levels at AcmeTech?",
+      "ground_truth_answer": "SEV1 (Critical), SEV2 (High), SEV3 (Medium), and SEV4 (Low).",
+      "source_document": "Security/Incident_Response.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q058",
+      "question": "How are access requests beyond an employee's default RBAC profile approved?",
+      "ground_truth_answer": "Requested through the IT Service Desk portal and approved by both the employee's manager and the relevant system owner, provisioned within 1 business day.",
+      "source_document": "Security/Access_Control.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q059",
+      "question": "How often are access reviews conducted for systems handling Confidential or Restricted data, and after how many days of inactivity is unused access revoked?",
+      "ground_truth_answer": "Quarterly access reviews; unused access is automatically revoked after 90 days of inactivity.",
+      "source_document": "Security/Access_Control.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q060",
+      "question": "How long are production database backups retained, and across how many AWS regions are they stored?",
+      "ground_truth_answer": "Full daily snapshots retained for 35 days, stored across two AWS regions.",
+      "source_document": "Security/Disaster_Recovery.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q061",
+      "question": "How quickly does AcmeTech's production environment fail over between regions during an outage?",
+      "ground_truth_answer": "Approximately 2-3 minutes, via automatic Route 53 health check rerouting.",
+      "source_document": "Security/Disaster_Recovery.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q062",
+      "question": "How often must a Crisis Communication Lead provide status updates during an active incident affecting Company facilities?",
+      "ground_truth_answer": "At least every 4 hours.",
+      "source_document": "Security/Disaster_Recovery.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q063",
+      "question": "What are the three core products in the AcmeTech product suite?",
+      "ground_truth_answer": "AcmeFlow, AcmeSync, and AcmeCopilot.",
+      "source_document": "Product/Product_Overview.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q064",
+      "question": "What is the monthly price of the Growth pricing tier?",
+      "ground_truth_answer": "$79 per user per month.",
+      "source_document": "Product/Product_Overview.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q065",
+      "question": "When did AcmeCopilot move from beta to general availability?",
+      "ground_truth_answer": "In version 3.4, released January 15, 2026, for all Enterprise customers.",
+      "source_document": "Product/Release_Notes.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q066",
+      "question": "How many times will a failed workflow run automatically retry?",
+      "ground_truth_answer": "Up to 3 times with exponential backoff.",
+      "source_document": "Product/FAQ.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q067",
+      "question": "How many nodes can a single workflow include on the Growth tier?",
+      "ground_truth_answer": "Up to 50 nodes.",
+      "source_document": "Product/User_Guide.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q068",
+      "question": "What discount does annual billing provide compared to monthly billing?",
+      "ground_truth_answer": "A 20% discount on all paid tiers.",
+      "source_document": "Product/FAQ.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q069",
+      "question": "What is the price of the Starter pricing tier and how many active workflows does it include?",
+      "ground_truth_answer": "$29/user/month, up to 10 active workflows.",
+      "source_document": "Product/Product_Overview.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q070",
+      "question": "What company sizes and industries does AcmeTech primarily target?",
+      "ground_truth_answer": "Mid-market and enterprise companies with 200-5,000 employees, primarily in financial services, healthcare, and technology.",
+      "source_document": "Product/Product_Overview.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q071",
+      "question": "How many pre-built integrations does the AcmeTech platform support?",
+      "ground_truth_answer": "Over 200 pre-built integrations.",
+      "source_document": "Product/Product_Overview.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q072",
+      "question": "How long does it typically take new users to complete their first working AcmeFlow workflow?",
+      "ground_truth_answer": "Under 15 minutes.",
+      "source_document": "Product/User_Guide.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q073",
+      "question": "How long is Run History log retention on the Growth tier versus the Enterprise tier?",
+      "ground_truth_answer": "90 days on Growth and 1 year on Enterprise.",
+      "source_document": "Product/User_Guide.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q074",
+      "question": "What permission levels can be assigned when sharing an AcmeFlow workflow with a teammate?",
+      "ground_truth_answer": "View, Edit, or Admin.",
+      "source_document": "Product/User_Guide.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q075",
+      "question": "What integration was added natively in version 3.4 of the product?",
+      "ground_truth_answer": "Native integration with Snowflake for direct data warehouse writes.",
+      "source_document": "Product/Release_Notes.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q076",
+      "question": "What feature was introduced in version 3.3 that allows conditional logic in workflows?",
+      "ground_truth_answer": "Conditional branching nodes (if/else logic) in AcmeFlow.",
+      "source_document": "Product/Release_Notes.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q077",
+      "question": "What major sync capability launched in version 3.2, and what legacy API was deprecated?",
+      "ground_truth_answer": "AcmeSync real-time bi-directional sync for Salesforce and NetSuite launched, and the legacy v1 API was deprecated (migrated by October 2025).",
+      "source_document": "Product/Release_Notes.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q078",
+      "question": "How long is AcmeTech's free trial, and does it require a credit card?",
+      "ground_truth_answer": "14 days, of the Growth tier, with no credit card required.",
+      "source_document": "Product/FAQ.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q079",
+      "question": "What encryption standards protect AcmeTech customer data in transit and at rest?",
+      "ground_truth_answer": "TLS 1.2+ in transit and AES-256 at rest.",
+      "source_document": "Product/FAQ.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q080",
+      "question": "What is the Enterprise customer support first response time via the dedicated Slack channel?",
+      "ground_truth_answer": "1 hour.",
+      "source_document": "Product/FAQ.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q081",
+      "question": "What is the daily meal expense limit while traveling for business?",
+      "ground_truth_answer": "$50 per day for individual meals while traveling.",
+      "source_document": "Finance/Expense_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q082",
+      "question": "What approval is required for purchases between $25,000 and $100,000?",
+      "ground_truth_answer": "VP approval and a mandatory vendor security review.",
+      "source_document": "Finance/Procurement.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q083",
+      "question": "When is business class airfare permitted under the Travel Policy?",
+      "ground_truth_answer": "For flights over 10 hours, or red-eye flights immediately preceding a same-day client meeting.",
+      "source_document": "Finance/Travel_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q084",
+      "question": "Within how many days must expenses be submitted through Ramp after being incurred?",
+      "ground_truth_answer": "Within 30 days of being incurred.",
+      "source_document": "Finance/Expense_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q085",
+      "question": "What is the maximum hotel rate permitted in high-cost cities like New York or San Francisco?",
+      "ground_truth_answer": "$450 per night in high-cost cities.",
+      "source_document": "Finance/Travel_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q086",
+      "question": "What is the per-person client meal expense limit?",
+      "ground_truth_answer": "$75 per person for client meals.",
+      "source_document": "Finance/Expense_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q087",
+      "question": "What expense dollar amount triggers a requirement for both manager and department head approval?",
+      "ground_truth_answer": "Expenses between $500 and $5,000 require both manager and department head approval.",
+      "source_document": "Finance/Expense_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q088",
+      "question": "What expenses are explicitly non-reimbursable at AcmeTech?",
+      "ground_truth_answer": "Alcohol at non-client meals, personal entertainment unrelated to business, traffic or parking fines, and first-class airfare for flights under 6 hours.",
+      "source_document": "Finance/Expense_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q089",
+      "question": "What approval is required for purchases under $2,000?",
+      "ground_truth_answer": "Manager approval only.",
+      "source_document": "Finance/Procurement.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q090",
+      "question": "What approvals are required for purchases above $100,000, and additionally for multi-year contracts?",
+      "ground_truth_answer": "CFO approval, plus CEO approval for multi-year contracts.",
+      "source_document": "Finance/Procurement.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q091",
+      "question": "What tool is used to issue Purchase Orders before committing to purchases over $2,000?",
+      "ground_truth_answer": "Coupa.",
+      "source_document": "Finance/Procurement.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q092",
+      "question": "What platform must all flights and hotels be booked through at AcmeTech?",
+      "ground_truth_answer": "Navan.",
+      "source_document": "Finance/Travel_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q093",
+      "question": "What is the daily meal per diem when itemized receipts are not submitted during travel?",
+      "ground_truth_answer": "$85 per day.",
+      "source_document": "Finance/Travel_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q094",
+      "question": "How far in advance must international travel be approved by a manager?",
+      "ground_truth_answer": "At least 2 weeks in advance.",
+      "source_document": "Finance/Travel_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q095",
+      "question": "What is the P1 support response time SLA for Enterprise customers?",
+      "ground_truth_answer": "1 hour.",
+      "source_document": "Customer_Support/SLA.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q096",
+      "question": "After how long should an unresolved P1 ticket be escalated to Tier 2?",
+      "ground_truth_answer": "If unresolved after 2 hours.",
+      "source_document": "Customer_Support/Escalation_Guide.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q097",
+      "question": "What tool do support agents use for ticket management, and what tool for in-app chat?",
+      "ground_truth_answer": "Zendesk for ticket management and Intercom for in-app chat.",
+      "source_document": "Customer_Support/Support_SOP.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q098",
+      "question": "What uptime percentage does AcmeTech guarantee for Enterprise tier customers?",
+      "ground_truth_answer": "99.9% monthly uptime.",
+      "source_document": "Customer_Support/SLA.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q099",
+      "question": "What must happen immediately if a support ticket involves suspected data loss or security concerns?",
+      "ground_truth_answer": "It must be escalated to Tier 3 and the Security team immediately, regardless of priority.",
+      "source_document": "Customer_Support/Escalation_Guide.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q100",
+      "question": "What are AcmeTech's four support ticket priority levels?",
+      "ground_truth_answer": "P1 (Urgent), P2 (High), P3 (Medium), and P4 (Low).",
+      "source_document": "Customer_Support/Support_SOP.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q101",
+      "question": "How often must support agents provide a status update on an open P1 or P2 ticket?",
+      "ground_truth_answer": "At least once every 24 hours, even without a resolution.",
+      "source_document": "Customer_Support/Support_SOP.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q102",
+      "question": "What are AcmeTech's three support escalation tiers?",
+      "ground_truth_answer": "Tier 1 (Frontline Support), Tier 2 (Technical Support), and Tier 3 (Engineering On-Call).",
+      "source_document": "Customer_Support/Escalation_Guide.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q103",
+      "question": "After how many business days should an unresolved P3 ticket be escalated to Tier 2?",
+      "ground_truth_answer": "3 business days.",
+      "source_document": "Customer_Support/Escalation_Guide.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q104",
+      "question": "What platform logs executive escalations for strategic Enterprise accounts, and how often are they reviewed?",
+      "ground_truth_answer": "Gainsight, reviewed weekly in the Customer Health meeting.",
+      "source_document": "Customer_Support/Escalation_Guide.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q105",
+      "question": "What is the Growth tier's P1 support response time compared to Enterprise?",
+      "ground_truth_answer": "Growth is 4 hours for P1, compared to 1 hour for Enterprise.",
+      "source_document": "Customer_Support/SLA.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q106",
+      "question": "What percentage target does AcmeTech set for resolving P1 issues within 4 hours for Enterprise customers?",
+      "ground_truth_answer": "90% of P1 issues resolved within 4 hours.",
+      "source_document": "Customer_Support/SLA.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q107",
+      "question": "What range of service credits are Enterprise customers eligible for if uptime falls below the guaranteed threshold?",
+      "ground_truth_answer": "5% to 30% of their monthly subscription fee, applied to the following month's invoice.",
+      "source_document": "Customer_Support/SLA.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q108",
+      "question": "How long do confidentiality obligations survive under the standard NDA template?",
+      "ground_truth_answer": "3 years from the date of disclosure, except trade secrets, which remain protected as long as they qualify as trade secrets.",
+      "source_document": "Legal/NDA.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q109",
+      "question": "How long is account data retained after a customer's account is closed?",
+      "ground_truth_answer": "90 days after account closure, unless a longer period is required for legal or tax purposes.",
+      "source_document": "Legal/Privacy_Policy.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q110",
+      "question": "What compliance certifications does AcmeTech currently hold, and which is it pursuing?",
+      "ground_truth_answer": "SOC 2 Type II and ISO 27001 certification; pursuing HIPAA compliance readiness.",
+      "source_document": "Legal/Compliance.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q111",
+      "question": "Within how many days does AcmeTech respond to a verified data subject access request?",
+      "ground_truth_answer": "Within 30 days, per GDPR and CCPA requirements.",
+      "source_document": "Legal/Privacy_Policy.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q112",
+      "question": "How much advance notice does AcmeTech give customers before adding a new sub-processor?",
+      "ground_truth_answer": "30 days' notice.",
+      "source_document": "Legal/Privacy_Policy.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q113",
+      "question": "What governing law applies by default to the standard NDA template?",
+      "ground_truth_answer": "The laws of the State of Delaware, though it may be negotiated per counterparty.",
+      "source_document": "Legal/NDA.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q114",
+      "question": "What categories of personal data does AcmeTech collect according to the Privacy Policy?",
+      "ground_truth_answer": "Account data, usage data, billing data, and support data.",
+      "source_document": "Legal/Privacy_Policy.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q115",
+      "question": "How long is support ticket data retained under the Privacy Policy?",
+      "ground_truth_answer": "3 years.",
+      "source_document": "Legal/Privacy_Policy.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q116",
+      "question": "How often is AcmeTech's SOC 2 Type II audit renewed, and how often does ISO 27001 undergo full recertification?",
+      "ground_truth_answer": "SOC 2 Type II is renewed annually each September; ISO 27001 undergoes full recertification every 3 years, with annual surveillance audits.",
+      "source_document": "Legal/Compliance.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q117",
+      "question": "What annual compliance training completion rate is required of all employees?",
+      "ground_truth_answer": "100% completion by December 31 each year.",
+      "source_document": "Legal/Compliance.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q118",
+      "question": "Where can customers request AcmeTech's SOC 2 report or security questionnaire responses?",
+      "ground_truth_answer": "The Trust Center at trust.acmetech.com, subject to an NDA where required.",
+      "source_document": "Legal/Compliance.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q119",
+      "question": "Under GDPR, what role does AcmeTech act as for customer data submitted into the platform versus account/billing information?",
+      "ground_truth_answer": "AcmeTech acts as a data processor for customer data submitted into the platform and as a data controller for account and billing information.",
+      "source_document": "Legal/Privacy_Policy.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q120",
+      "question": "What ticketing priority requires immediate Tier 3 and Security escalation regardless of severity?",
+      "ground_truth_answer": "Any ticket involving suspected data loss or security concerns.",
+      "source_document": "Customer_Support/Escalation_Guide.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q121",
+      "question": "What is AcmeTech's standard dress code policy?",
+      "ground_truth_answer": "A casual dress code in all offices; business casual is expected when meeting customers on-site or at external events.",
+      "source_document": "HR/Employee_Handbook.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q122",
+      "question": "What response time is expected of employees for Slack messages versus email?",
+      "ground_truth_answer": "Slack messages within 1 business day; email within 2 business days.",
+      "source_document": "HR/Employee_Handbook.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q123",
+      "question": "How many public holidays does AcmeTech observe per year?",
+      "ground_truth_answer": "11 public holidays per year, based on the employee's local office calendar.",
+      "source_document": "HR/Leave_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q124",
+      "question": "What is the one-time home office setup allowance for hybrid/remote employees?",
+      "ground_truth_answer": "$500 USD, one-time.",
+      "source_document": "HR/Benefits_Guide.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q125",
+      "question": "When does AcmeTech's company-wide winter shutdown occur each year?",
+      "ground_truth_answer": "Between December 24 and January 1, in addition to standard PTO.",
+      "source_document": "HR/Benefits_Guide.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q126",
+      "question": "How many days per month of PTO do new hires accrue during their first year?",
+      "ground_truth_answer": "1.83 days per month, accrued monthly rather than front-loaded.",
+      "source_document": "HR/Leave_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q127",
+      "question": "What performance rating framework does AcmeTech use, and across what three dimensions?",
+      "ground_truth_answer": "The AcmeTech Growth Framework, rating employees on Impact, Craft, and Collaboration on a 5-point scale.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q128",
+      "question": "In which two months are formal performance reviews conducted each year?",
+      "ground_truth_answer": "April and October.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q129",
+      "question": "What is required for two consecutive 'Exceeds Expectations' performance ratings?",
+      "ground_truth_answer": "Eligibility for accelerated promotion review.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q130",
+      "question": "What primary datastore does AcmeTech use for caching, and what for event streaming?",
+      "ground_truth_answer": "Redis for caching and Kafka for event streaming.",
+      "source_document": "Engineering/Engineering_Handbook.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q131",
+      "question": "What infrastructure-as-code tool manages AcmeTech's Terraform-defined infrastructure, and what GitOps tool applies changes?",
+      "ground_truth_answer": "Terraform defines infrastructure as code, and ArgoCD applies changes through a GitOps pipeline.",
+      "source_document": "Engineering/Architecture_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q132",
+      "question": "What observability tools does AcmeTech use for metrics, tracing, and logging?",
+      "ground_truth_answer": "Datadog for metrics, OpenTelemetry for distributed tracing, and the ELK stack for centralized logging.",
+      "source_document": "Engineering/Architecture_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q133",
+      "question": "What five core services are named in the Architecture Guide?",
+      "ground_truth_answer": "Auth Service, Workflow Engine, Integration Hub, Notification Service, and Billing Service.",
+      "source_document": "Engineering/Architecture_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q134",
+      "question": "What tool orchestrates nightly ETL jobs into AcmeTech's Snowflake data warehouse?",
+      "ground_truth_answer": "Airflow.",
+      "source_document": "Engineering/Architecture_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q135",
+      "question": "What style guide does Go code follow at AcmeTech, and what linter enforces it in CI?",
+      "ground_truth_answer": "The Google Go Style Guide, enforced via golangci-lint.",
+      "source_document": "Engineering/Coding_Standards.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q136",
+      "question": "What commit message convention does AcmeTech follow?",
+      "ground_truth_answer": "The Conventional Commits specification (e.g., 'feat:', 'fix:', 'chore:').",
+      "source_document": "Engineering/Coding_Standards.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q137",
+      "question": "Where are secrets stored at AcmeTech, and what is explicitly prohibited?",
+      "ground_truth_answer": "Secrets are managed via AWS Secrets Manager; committing secrets to source control is prohibited.",
+      "source_document": "Engineering/Coding_Standards.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q138",
+      "question": "How often is staging deployed at AcmeTech?",
+      "ground_truth_answer": "Twice daily, mirroring production configuration.",
+      "source_document": "Engineering/Deployment_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q139",
+      "question": "What tool manages AcmeTech's feature flags?",
+      "ground_truth_answer": "LaunchDarkly.",
+      "source_document": "Engineering/Deployment_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q140",
+      "question": "What third tier of pricing does AcmeTech offer, and what does it include?",
+      "ground_truth_answer": "Enterprise tier, custom pricing, including SSO, audit logs, dedicated support, and a 99.9% uptime SLA.",
+      "source_document": "Product/Product_Overview.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q141",
+      "question": "What percentage of workflow execution speed improvement did version 3.4 deliver?",
+      "ground_truth_answer": "An average of 30% improvement through engine optimization.",
+      "source_document": "Product/Release_Notes.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q142",
+      "question": "How many pilot customers participated in AcmeCopilot's private beta launched in version 3.1?",
+      "ground_truth_answer": "50 pilot customers.",
+      "source_document": "Product/Release_Notes.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q143",
+      "question": "What feature was added to workflow folders in version 3.1?",
+      "ground_truth_answer": "Role-based permissions for workflow folders.",
+      "source_document": "Product/Release_Notes.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q144",
+      "question": "What is the difference between AcmeFlow and AcmeSync according to the FAQ?",
+      "ground_truth_answer": "AcmeFlow is a no-code automation builder for event-driven workflows, while AcmeSync focuses on continuous, real-time data synchronization between systems of record.",
+      "source_document": "Product/FAQ.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q145",
+      "question": "What happens to billing when a customer upgrades their plan mid-cycle versus downgrading?",
+      "ground_truth_answer": "Upgrades take effect immediately with a prorated charge; downgrades take effect at the start of the next billing cycle.",
+      "source_document": "Product/FAQ.pdf",
+      "category": "Product",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q146",
+      "question": "What software subscription monthly amount can be expensed without additional approval?",
+      "ground_truth_answer": "Up to $100/month without additional approval; above that requires manager sign-off.",
+      "source_document": "Finance/Expense_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q147",
+      "question": "What is the quarterly team-building event expense limit per person?",
+      "ground_truth_answer": "$75 per person per quarter.",
+      "source_document": "Finance/Expense_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q148",
+      "question": "What approval is required for expenses submitted more than 60 days after being incurred?",
+      "ground_truth_answer": "VP-level approval.",
+      "source_document": "Finance/Expense_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q149",
+      "question": "What must new vendors complete before a contract is signed if they will access Confidential or Restricted data?",
+      "ground_truth_answer": "A vendor intake form and, for Restricted data access, a security questionnaire reviewed by the Security team.",
+      "source_document": "Finance/Procurement.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q150",
+      "question": "What is the Preferred Vendor Program, and what benefit does it offer?",
+      "ground_truth_answer": "A catalog of pre-approved vendors in the Procurement Portal offering negotiated Company-wide discounts, already security-reviewed.",
+      "source_document": "Finance/Procurement.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q151",
+      "question": "Under what circumstance does a rental car require director-level approval on business travel?",
+      "ground_truth_answer": "Rental cars always require director-level approval, and must be mid-size tier or below unless equipment requires a larger vehicle.",
+      "source_document": "Finance/Travel_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q152",
+      "question": "What travel insurance program are employees automatically enrolled in for international travel?",
+      "ground_truth_answer": "AIG Travel Guard, through the Company's travel insurance and emergency assistance program.",
+      "source_document": "Finance/Travel_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q153",
+      "question": "What three channels can customers use to submit support tickets?",
+      "ground_truth_answer": "In-app chat, email (support@acmetech.com), and the Enterprise dedicated Slack channel.",
+      "source_document": "Customer_Support/Support_SOP.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q154",
+      "question": "What knowledge base tool does Support use internally for troubleshooting runbooks?",
+      "ground_truth_answer": "A shared Notion knowledge base.",
+      "source_document": "Customer_Support/Support_SOP.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q155",
+      "question": "What is the Starter tier's P1 response time SLA?",
+      "ground_truth_answer": "8 hours.",
+      "source_document": "Customer_Support/SLA.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q156",
+      "question": "What is the Growth tier's guaranteed monthly uptime?",
+      "ground_truth_answer": "99.5%.",
+      "source_document": "Customer_Support/SLA.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q157",
+      "question": "What exclusions apply to Confidential Information under the standard NDA?",
+      "ground_truth_answer": "Information that becomes publicly available through no fault of the receiving party, was already known before disclosure, or is independently developed without use of the disclosing party's Confidential Information.",
+      "source_document": "Legal/NDA.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q158",
+      "question": "What GDPR article requires AcmeTech to appoint an EU representative?",
+      "ground_truth_answer": "GDPR Article 27.",
+      "source_document": "Legal/Privacy_Policy.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q159",
+      "question": "Where can customers find AcmeTech's current list of sub-processors?",
+      "ground_truth_answer": "acmetech.com/subprocessors.",
+      "source_document": "Legal/Privacy_Policy.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q160",
+      "question": "Does AcmeTech currently process protected health information (PHI) in production?",
+      "ground_truth_answer": "No, not currently; it maintains a roadmap toward HIPAA-eligible infrastructure.",
+      "source_document": "Legal/Compliance.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q161",
+      "question": "Who oversees AcmeTech's Compliance program?",
+      "ground_truth_answer": "The General Counsel, in partnership with the Head of Security Engineering.",
+      "source_document": "Legal/Compliance.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q162",
+      "question": "What regulatory frameworks does AcmeTech comply with for data privacy across regions?",
+      "ground_truth_answer": "GDPR (EU), CCPA/CPRA (California), and PIPEDA (Canada).",
+      "source_document": "Legal/Privacy_Policy.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q163",
+      "question": "What countries besides the US have country-specific retirement programs described in the Benefits Guide?",
+      "ground_truth_answer": "Canada, Ireland, India, and Singapore, with RRSP matching, PRSA, PF, and CPF supplements respectively.",
+      "source_document": "HR/Benefits_Guide.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q164",
+      "question": "What six offices does AcmeTech operate from according to the HR Policy?",
+      "ground_truth_answer": "San Francisco (HQ), Austin, Toronto, Dublin, Bengaluru, and Singapore.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q165",
+      "question": "Who should an employee contact if they believe they've experienced workplace discrimination?",
+      "ground_truth_answer": "People Operations (people-ops@acmetech.com) or the anonymous Ethics Hotline at 1-800-555-0199.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q166",
+      "question": "What flexible working hours window does AcmeTech allow for start times?",
+      "ground_truth_answer": "Between 7:00 AM and 10:00 AM, provided core collaboration hours of 10:00 AM-3:00 PM are maintained.",
+      "source_document": "HR/HR_Policy.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q167",
+      "question": "What tools make up AcmeTech's standard workplace toolset?",
+      "ground_truth_answer": "Slack, Google Workspace, Jira and Confluence, Zoom, and Workday.",
+      "source_document": "HR/Employee_Handbook.pdf",
+      "category": "HR",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q168",
+      "question": "How is device security enforced on AcmeTech laptops?",
+      "ground_truth_answer": "All laptops are enrolled in Jamf (MDM) with full-disk encryption, automatic OS patching, and remote wipe capability.",
+      "source_document": "Security/Security_Policy.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q169",
+      "question": "What review is required before a vendor can access Restricted data under the Security Policy?",
+      "ground_truth_answer": "A security questionnaire and a SOC 2 report review before contract signature.",
+      "source_document": "Security/Security_Policy.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q170",
+      "question": "What five phases make up AcmeTech's security incident response process?",
+      "ground_truth_answer": "Detection and Triage, Containment, Eradication, Recovery, and Postmortem.",
+      "source_document": "Security/Incident_Response.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q171",
+      "question": "Who leads the Incident Response Team (IRT) and which departments does it include?",
+      "ground_truth_answer": "The Head of Security Engineering leads it, with representatives from Engineering, Legal, and Communications.",
+      "source_document": "Security/Incident_Response.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q172",
+      "question": "How is privileged production access granted at AcmeTech?",
+      "ground_truth_answer": "Through time-limited, just-in-time access via the Company's PAM tool, approved by the Head of Security Engineering.",
+      "source_document": "Security/Access_Control.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q173",
+      "question": "What audit does IT Security conduct monthly regarding offboarding?",
+      "ground_truth_answer": "A monthly audit to confirm timely deprovisioning of access after termination.",
+      "source_document": "Security/Access_Control.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q174",
+      "question": "What configuration does AcmeTech's production environment use for regional failover?",
+      "ground_truth_answer": "An active-active configuration across us-east-1 and eu-west-1.",
+      "source_document": "Security/Disaster_Recovery.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q175",
+      "question": "Are employees expected to work remotely during an extended facility outage?",
+      "ground_truth_answer": "Yes, using Company-issued equipment.",
+      "source_document": "Security/Disaster_Recovery.pdf",
+      "category": "Security",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q176",
+      "question": "What percentage does the Compliance document say AcmeTech targets for full HIPAA compliance readiness, and by when?",
+      "ground_truth_answer": "Targeted for completion in Q3 2026 (a specific percentage is not given, only the target quarter).",
+      "source_document": "Legal/Compliance.pdf",
+      "category": "Legal",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "MH001",
+      "question": "An engineer wants to expense a new SaaS subscription costing $150/month for their team. Does this require additional approval, and if so, from whom?",
+      "ground_truth_answer": "Yes. Software subscriptions up to $100/month don't need extra approval; above that requires manager sign-off, so at $150/month the engineer needs their manager's approval.",
+      "source_document": "Finance/Expense_Policy.pdf",
+      "category": "Finance",
+      "question_type": "multi_hop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "MH002",
+      "question": "If a customer on the Enterprise tier reports a platform outage (P1), what response time SLA applies and which escalation tier will likely handle it if unresolved after 2 hours?",
+      "ground_truth_answer": "Enterprise P1 tickets have a 1-hour response SLA, and if unresolved after 2 hours the ticket is escalated to Tier 2 Technical Support (or Tier 3 Engineering On-Call if it involves data issues or outages).",
+      "source_document": "Customer_Support/SLA.pdf + Customer_Support/Escalation_Guide.pdf",
+      "category": "Customer_Support",
+      "question_type": "multi_hop",
+      "difficulty": "hard"
+    },
+    {
+      "id": "MH003",
+      "question": "A new employee joins AcmeTech. What onboarding program do they go through, and what security requirement must be active on their device from day one?",
+      "ground_truth_answer": "They complete the 2-week 'Launchpad' onboarding program, and their device must have MFA enabled and full-disk encryption active via the Company's MDM (Jamf) enrollment, per the Security Policy.",
+      "source_document": "HR/Employee_Handbook.pdf + Security/Security_Policy.pdf",
+      "category": "HR",
+      "question_type": "multi_hop",
+      "difficulty": "hard"
+    },
+    {
+      "id": "MH004",
+      "question": "A production incident causes customer data exposure. What severity level is this, who leads the response, and within what window must customers be notified?",
+      "ground_truth_answer": "This is a SEV1 (Critical) incident, led by the Incident Response Team headed by the Head of Security Engineering (convening within 15 minutes), and affected customers must be notified within 72 hours per the Privacy Policy and Incident Response Plan.",
+      "source_document": "Security/Incident_Response.pdf + Legal/Privacy_Policy.pdf",
+      "category": "Security",
+      "question_type": "multi_hop",
+      "difficulty": "hard"
+    },
+    {
+      "id": "MH005",
+      "question": "Can a Starter tier customer expect a formal uptime SLA, and how does their P1 support response time compare to Enterprise?",
+      "ground_truth_answer": "No, the Starter tier does not include a formal uptime guarantee. Its P1 response time is 8 hours, compared to 1 hour for Enterprise customers.",
+      "source_document": "Customer_Support/SLA.pdf",
+      "category": "Customer_Support",
+      "question_type": "multi_hop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "MH006",
+      "question": "An employee wants to purchase a $30,000 software tool for their department. What approvals are needed, and does it also require a security review?",
+      "ground_truth_answer": "Purchases between $25,000 and $100,000 require VP approval and a mandatory vendor security review, so both are needed for a $30,000 purchase.",
+      "source_document": "Finance/Procurement.pdf + Security/Security_Policy.pdf",
+      "category": "Finance",
+      "question_type": "multi_hop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "MH007",
+      "question": "If an employee is terminated, within what timeframe must their system access be revoked, and within what timeframe must they return Company property?",
+      "ground_truth_answer": "System access must be revoked within 1 hour of the termination being processed in Workday, while Company property must be returned within 5 business days of the last working day.",
+      "source_document": "Security/Access_Control.pdf + HR/HR_Policy.pdf",
+      "category": "Security",
+      "question_type": "multi_hop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "MH008",
+      "question": "A workflow fails repeatedly for an Enterprise customer, and they file a P2 ticket. What is the response SLA, and after how long is it escalated if unresolved?",
+      "ground_truth_answer": "The Enterprise P2 response SLA is 4 hours, and if unresolved after 8 hours, it is escalated to Tier 2.",
+      "source_document": "Customer_Support/SLA.pdf + Customer_Support/Escalation_Guide.pdf",
+      "category": "Customer_Support",
+      "question_type": "multi_hop",
+      "difficulty": "hard"
+    },
+    {
+      "id": "MH009",
+      "question": "How does AcmeTech's approach to code review differ for changes to shared infrastructure versus changes affecting billing or authentication?",
+      "ground_truth_answer": "Standard changes need at least one peer approval, and shared infrastructure changes need a designated code owner's approval; billing/authentication/data-deletion changes additionally require a second 'high-risk change' reviewer beyond standard code review.",
+      "source_document": "Engineering/Coding_Standards.pdf + Engineering/Deployment_Guide.pdf",
+      "category": "Engineering",
+      "question_type": "multi_hop",
+      "difficulty": "hard"
+    },
+    {
+      "id": "MH010",
+      "question": "A prospective customer wants AcmeTech's SOC 2 report. What must happen first, and what certification(s) back that report?",
+      "ground_truth_answer": "They must access the Trust Center at trust.acmetech.com and may need to execute a mutual NDA; the report is backed by AcmeTech's SOC 2 Type II certification (also ISO 27001 certified).",
+      "source_document": "Legal/Compliance.pdf + Legal/NDA.pdf",
+      "category": "Legal",
+      "question_type": "multi_hop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "MH011",
+      "question": "An employee on the Engineering team wants to book business class for an 8-hour flight to a conference (not preceding a same-day client meeting). Is this allowed, and what class should they book instead?",
+      "ground_truth_answer": "No, business class isn't allowed for an 8-hour non-red-eye flight; premium economy is permitted for flights between 6 and 10 hours, so that is the appropriate class.",
+      "source_document": "Finance/Travel_Policy.pdf",
+      "category": "Finance",
+      "question_type": "multi_hop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "MH012",
+      "question": "If a customer's data is compromised in a breach, what does the Incident Response Plan require regarding declaring severity, and what does the Privacy Policy require regarding notification timing?",
+      "ground_truth_answer": "The Incident Response Plan requires classifying it as SEV1 (Critical) and convening the IRT within 15 minutes, while the Privacy Policy (aligned with the Incident Response Plan) requires notifying affected customers within 72 hours.",
+      "source_document": "Security/Incident_Response.pdf + Legal/Privacy_Policy.pdf",
+      "category": "Security",
+      "question_type": "multi_hop",
+      "difficulty": "hard"
+    },
+    {
+      "id": "NEG001",
+      "question": "What is AcmeTech's policy on employee use of cryptocurrency for payroll?",
+      "ground_truth_answer": "Not covered in the knowledge base. No document discusses cryptocurrency payroll; a RAG system should say this isn't available rather than fabricating an answer.",
+      "source_document": "N/A",
+      "category": "General",
+      "question_type": "negative",
+      "difficulty": "hard"
+    },
+    {
+      "id": "NEG002",
+      "question": "Who is AcmeTech's Chief Marketing Officer?",
+      "ground_truth_answer": "Not covered in the knowledge base. Only the CEO (Maria Chen), CTO (David Okafor), and CFO (Priya Ramaswamy) are named.",
+      "source_document": "N/A",
+      "category": "General",
+      "question_type": "negative",
+      "difficulty": "hard"
+    },
+    {
+      "id": "NEG003",
+      "question": "What is the maximum number of pets allowed in the AcmeTech office?",
+      "ground_truth_answer": "Not covered in the knowledge base. No pet policy is documented.",
+      "source_document": "N/A",
+      "category": "General",
+      "question_type": "negative",
+      "difficulty": "medium"
+    },
+    {
+      "id": "NEG004",
+      "question": "What discount does AcmeTech offer for nonprofit customers?",
+      "ground_truth_answer": "Not covered in the knowledge base. No nonprofit pricing or discount program is documented.",
+      "source_document": "N/A",
+      "category": "General",
+      "question_type": "negative",
+      "difficulty": "medium"
+    },
+    {
+      "id": "NEG005",
+      "question": "What is AcmeTech's maternity leave policy for surrogacy arrangements specifically?",
+      "ground_truth_answer": "Not covered in the knowledge base. The Benefits Guide only distinguishes birthing parents (16 weeks) and non-birthing/adoptive parents (10 weeks); surrogacy is not separately addressed.",
+      "source_document": "N/A",
+      "category": "General",
+      "question_type": "negative",
+      "difficulty": "hard"
+    },
+    {
+      "id": "NEG006",
+      "question": "Which cloud provider besides AWS does AcmeTech use for redundancy, such as Google Cloud or Azure?",
+      "ground_truth_answer": "Not covered in the knowledge base. The Architecture Guide only describes AWS (EKS, three regions); no multi-cloud provider is mentioned.",
+      "source_document": "N/A",
+      "category": "General",
+      "question_type": "negative",
+      "difficulty": "medium"
+    },
+    {
+      "id": "NEG007",
+      "question": "What is the penalty for an employee who works from a country not listed among AcmeTech's six offices without approval?",
+      "ground_truth_answer": "Not covered in the knowledge base. No cross-border remote work violation policy is documented.",
+      "source_document": "N/A",
+      "category": "General",
+      "question_type": "negative",
+      "difficulty": "hard"
+    },
+    {
+      "id": "NEG008",
+      "question": "Does AcmeTech offer a bug bounty program for external security researchers?",
+      "ground_truth_answer": "Not covered in the knowledge base. The Security Policy and Incident Response Plan don't mention a bug bounty program.",
+      "source_document": "N/A",
+      "category": "General",
+      "question_type": "negative",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q177",
+      "question": "What Slack channel workflow pages on-call responders during an escalation, and what tool creates the linked incident thread?",
+      "ground_truth_answer": "The Escalate button in Zendesk automatically pages the on-call responder via PagerDuty and creates a linked incident thread in Slack.",
+      "source_document": "Customer_Support/Escalation_Guide.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q178",
+      "question": "What is the difference between AcmeTech's per diem meal allowance and the itemized meal expense limit while traveling?",
+      "ground_truth_answer": "A daily meal per diem of $85 applies when itemized receipts are not submitted, versus the $50/day individual meal limit that applies with itemized receipts.",
+      "source_document": "Finance/Travel_Policy.pdf",
+      "category": "Finance",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q179",
+      "question": "What is AcmeTech's target resolution rate for P2 issues for Enterprise customers, and within what timeframe?",
+      "ground_truth_answer": "90% of P2 issues resolved within 1 business day for Enterprise customers.",
+      "source_document": "Customer_Support/SLA.pdf",
+      "category": "Customer_Support",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q180",
+      "question": "Where are AcmeTech's engineering level expectations documented?",
+      "ground_truth_answer": "In the Engineering Career Framework on Confluence.",
+      "source_document": "Engineering/Engineering_Handbook.pdf",
+      "category": "Engineering",
+      "question_type": "single_hop",
+      "difficulty": "easy"
+    }
+  ]
+}
