@@ -171,12 +171,6 @@ These are **development-set observations**, not independently validated producti
 - The current demonstration does not establish multi-tenant authorization, document-level access controls, production monitoring, or enterprise security compliance.
 - Retrieval, multi-hop reasoning, and source attribution remain areas for further testing and improvement.
 
-## Repository notes
-
-The codebase is organized into `backend/`, `frontend/`, and `evaluation/`, with Docker configuration at the root. Before publishing or redistributing any files under `sample_documents/`, confirm that their licenses permit public redistribution. If rights are unclear, remove the PDFs from the public repository and document how to supply an authorized dataset locally.
-
-Never commit API keys, `.env` files, local virtual environments, or persisted vector-store data containing potentially sensitive document content.
-
 ---
 
 **Project status:** Working portfolio implementation demonstrated locally. Developed independently from a public client-style problem statement.
